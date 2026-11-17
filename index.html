@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#0088cc">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <title>Perfil - Sofia Azevedo</title>
+    <title>Perfil - Amanda Almeida</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -22,7 +22,7 @@
         <div class="profile-picture-container">
             <img
                 src="perfil.png"
-                alt="Sofia Azevedo"
+                alt="Amanda Almeida"
                 class="profile-image"
             >
             <div class="verification-badge">
@@ -32,7 +32,7 @@
 
         <!-- Informações do perfil -->
         <div class="profile-info">
-            <h1 class="profile-name">Sofia Azevedo</h1>
+            <h1 class="profile-name">Amanda Almeida</h1>
 
             <p class="profile-description">
                 Para ser redirecionado para o ambiente exclusivo, basta clicar no botão abaixo:
@@ -44,7 +44,7 @@
             <!-- Telegram -->
             <a
                 id="redirect-button"
-                href="https://telegram.me/sofiaazevedoofc_bot?start=1db4aa3f"
+                href="https://t.me/amandinhaalmeida_bot?start=start"
                 rel="noopener noreferrer"
                 class="social-btn telegram-btn"
             >
@@ -59,7 +59,7 @@
     <footer class="footer">
         <div class="footer-content">
             <p class="footer-text">
-                Todos os direitos reservados a Sofia Azevedo,<br class="footer-break">
+                Todos os direitos reservados a Amanda Almeida,<br class="footer-break">
                 qualquer vazamento de imagens<br class="footer-break">
                 pessoais é considerado crime sob<br class="footer-break">
                 Código Penal (Decreto-Lei 2.848, de 1940).
@@ -593,35 +593,5 @@
     </noscript>
     <!-- End Meta Pixel Code -->
 
-    <!-- Redirecionamento automático após 8 segundos -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const redirectUrl = "https://telegram.me/sofiaazevedoofc_bot?start=1db4aa3f";
-            const redirectButton = document.getElementById("redirect-button");
-
-            let redirectStarted = false;
-
-            function redirectUser() {
-                if (redirectStarted) return;
-
-                redirectStarted = true;
-                window.location.href = redirectUrl;
-            }
-
-            const redirectTimer = window.setTimeout(
-                redirectUser,
-                8000
-            );
-
-            // Mantém o botão funcionando imediatamente.
-            if (redirectButton) {
-                redirectButton.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    window.clearTimeout(redirectTimer);
-                    redirectUser();
-                });
-            }
-        });
-    </script>
 </body>
 </html>
